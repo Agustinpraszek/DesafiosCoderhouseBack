@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Llavero Gojo",
+    "description": "Llavero para llevar todas tus llaves con figura divertida de jujutsu Kaisen",
+    "price": 2000,
+    "thumbnail": "Sin imagen",
+    "code": "st255",
+    "stock": 133
+  },
+  {
+    "id": 2,
+    "title": "Llavero Denji",
+    "description": "Llavero para llevar todas tus llaves con figura divertida de Chainsawman",
+    "price": 2000,
+    "thumbnail": "Sin imagen",
+    "code": "st257",
+    "stock": 52
+  },
+  {
+    "id": 3,
+    "title": "Llavero Megumi",
+    "description": "Llavero para llevar todas tus llaves con figura divertida de jujutsu Kaisen",
+    "price": 2000,
+    "thumbnail": "Sin imagen",
+    "code": "st256",
+    "stock": 17
+  },
+  {
+    "id": 4,
+    "title": "Llavero Spiderman",
+    "description": "Llavero para llevar todas tus llaves con figura divertida de Marvel",
+    "price": 2000,
+    "thumbnail": "Sin imagen",
+    "code": "st225",
+    "stock": 2
+  },
+  {
+    "id": 5,
+    "title": "Llavero Deadpool",
+    "description": "Llavero para llevar todas tus llaves con figura divertida de Marvel",
+    "price": 2000,
+    "thumbnail": "Sin imagen",
+    "code": "st224",
+    "stock": 550
+  },
+  {
+    "id": 6,
+    "title": "Llavero Noodle",
+    "description": "Llavero para llevar todas tus llaves con figura divertida de Gorillaz",
+    "price": 2000,
+    "thumbnail": "Sin imagen",
+    "code": "st323",
+    "stock": 47
+  },
+  {
+    "id": 7,
+    "title": "Llavero Jerry",
+    "description": "Llavero para llevar todas tus llaves con figura divertida de Tom & Jerry",
+    "price": 2000,
+    "thumbnail": "Sin imagen",
+    "code": "st205",
+    "stock": 98
+  },
+  {
+    "id": 8,
+    "title": "Llavero Tom",
+    "description": "Llavero para llevar todas tus llaves con figura divertida de Tom & Jerry",
+    "price": 2000,
+    "thumbnail": "Sin imagen",
+    "code": "st204",
+    "stock": 27
+  },
+  {
+    "id": 9,
+    "title": "Llavero 2D",
+    "description": "Llavero para llevar todas tus llaves con figura divertida de Gorillaz",
+    "price": 2000,
+    "thumbnail": "Sin imagen",
+    "code": "st320",
+    "stock": 5
+  },
+  {
+    "id": 10,
+    "title": "Llavero Batman",
+    "description": "Llavero para llevar todas tus llaves con figura divertida de DC",
+    "price": 2000,
+    "thumbnail": "Sin imagen",
+    "code": "st200",
+    "stock": 1
+  }
+]
