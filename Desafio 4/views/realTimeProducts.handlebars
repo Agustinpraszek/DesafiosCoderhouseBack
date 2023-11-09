@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos en Tiempo Real</title>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <h1>Productos en Tiempo Real</h1>
+     <form id="productForm">
+        <input type="text" id="productTitle" placeholder="Nombre del producto" required />
+        <input type="number" id="productPrice" placeholder="Precio del producto" required />
+        <button type="submit">Agregar Producto</button>
+    </form>
+
+    <ul id="productList">
+        {{#each products}}
+            <li id="product_{{this.id}}">{{this.title}} - ${{this.price}}</li>
+        {{/each}}
+    </ul>
+
+     <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+            const socket = io();
+
+            socket.on('productAdded', (product) => {
+                // Añadir el producto a la lista en la vista
+                const productList = document.getElementById('productList');
+                const li = document.createElement('li');
+                li.setAttribute('id', `product_${product.id}`);
+                li.textContent = `${product.title} - $${product.price}`;
+                productList.appendChild(li);
+            });
+
+            socket.on('productDeleted', (productId) => {
+                // Eliminar el producto de la lista en la vista
+                const productElement = document.getElementById(`product_${productId}`);
+                if (productElement) productElement.remove();
+            });
+
+            const form = document.getElementById('productForm');
+            form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const title = document.getElementById('productTitle').value;
+            const price = document.getElementById('productPrice').value;
+            
+            // Emitir el evento para agregar producto
+            socket.emit('addProduct', { title, price });
+
+            // Limpiar el formulario
+            document.getElementById('productTitle').value = '';
+            document.getElementById('productPrice').value = '';
+        });
+    </script>
+    
+</body>
+</html>
